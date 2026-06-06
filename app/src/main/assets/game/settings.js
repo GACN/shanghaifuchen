@@ -225,6 +225,14 @@ window.Settings = (() => {
             <label class="st-label">🔗 中转站 Base URL（OpenAI兼容）</label>
             <input id="set-llmBase" type="text" class="st-input" value="${escHtml(s.llmBase)}" placeholder="例如 https://api.openai.com 或 https://你的中转站">
           </div>
+          <div class="st-full" style="margin-top:-4px;">
+            <span class="st-label" style="margin-bottom:6px;">快捷预设</span>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <button class="st-tab" onclick="document.getElementById('set-llmBase').value='https://toktp-shzrf6p1kcvnyih0fn1hutii32sh76jdcizea0erm5gu3jfe.xiaomimimo.com';document.getElementById('set-llmModel').value='mimo-v2.5';" style="font-size:11px;padding:6px 10px;">🤖 小米MiMo</button>
+              <button class="st-tab" onclick="document.getElementById('set-llmBase').value='https://api.deepseek.com';document.getElementById('set-llmModel').value='deepseek-chat';" style="font-size:11px;padding:6px 10px;">🐋 DeepSeek</button>
+              <button class="st-tab" onclick="document.getElementById('set-llmBase').value='https://api.openai.com';document.getElementById('set-llmModel').value='gpt-4o-mini';" style="font-size:11px;padding:6px 10px;">✨ OpenAI</button>
+            </div>
+          </div>
           <div class="st-full">
             <label class="st-label">🔑 API Key（只保存在本机APP数据里）</label>
             <input id="set-llmApiKey" type="password" class="st-input" value="${escHtml(s.llmApiKey || '')}" placeholder="sk-...">
