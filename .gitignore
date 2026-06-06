@@ -1,0 +1,31 @@
+# Build artifacts
+build*/
+dist*/
+backups/
+tools/
+testres/
+
+# Build manifests and scripts at root
+build*.xml
+build*.py
+parse_*.py
+
+# APK and verification artifacts
+*.apk
+*.idsig
+*.sha256*.txt
+*-验证记录.txt
+
+# Unknown binary files
+\\001*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
