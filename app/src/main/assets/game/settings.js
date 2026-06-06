@@ -204,6 +204,15 @@ window.Settings = (() => {
         #set-model-list .st-model-chip:hover{color:var(--accent-cyan);border-color:var(--accent-cyan);}
       </style>
 
+      <!-- 快捷导航（移动端补充被隐藏的顶部按钮功能） -->
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">
+        <button class="st-tab" onclick="UI.closeModal('settings');UI.openAchievementPanel()" style="flex:1;min-width:0;">🏆 成就</button>
+        <button class="st-tab" onclick="UI.closeModal('settings');UI.openSkillTree()" style="flex:1;min-width:0;">📚 技能树</button>
+        <button class="st-tab" onclick="UI.closeModal('settings');UI.switchPanel('worldmap')" style="flex:1;min-width:0;">🗺 地图</button>
+        <button class="st-tab" onclick="UI.closeModal('settings');UI.switchPanel('milestone')" style="flex:1;min-width:0;">🏅 里程碑</button>
+        <button class="st-tab" onclick="UI.closeModal('settings');UI.retireGame()" style="flex:1;min-width:0;">⏸ 暂停</button>
+      </div>
+
       <div class="st-tabs">
         <button class="st-tab act" onclick="Settings.switchTab('tab-llm',this)">⚙ LLM设置</button>
         <button class="st-tab" onclick="Settings.switchTab('tab-auto',this)">🤖 托管管理</button>
