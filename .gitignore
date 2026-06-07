@@ -1,13 +1,17 @@
-# Build artifacts
+# Build outputs
 build*/
 dist*/
 backups/
 tools/
 testres/
 
+# Gradle
+.gradle/
+local.properties
+
 # Build manifests and scripts at root
-build*.xml
-build*.py
+*.xml.bak
+gen_icon.py
 parse_*.py
 
 # APK and verification artifacts
@@ -16,9 +20,6 @@ parse_*.py
 *.sha256*.txt
 *-验证记录.txt
 
-# Unknown binary files
-\\001*
-
 # OS
 .DS_Store
 Thumbs.db
@@ -26,6 +27,3 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-# Logs
-*.log
